@@ -50,9 +50,26 @@ for (const city of cities) {
     h4.textContent = city.title;
     divCities.appendChild(h4)
     const image = document.createElement("img");
-    image.src = city.imgUrl
+    image.src = city.imgUrl;
     image.alt = city.title;
     divCities.appendChild(image);
     document.body.appendChild(divCities);
 }   
+
+/////////////////////////////////ejercicio 3.5///////////////////////////////////
+
+const button = document.createElement("button");
+        button.textContent = "Eliminar último div";
+        button.classList.add("btn");
+        document.body.appendChild(button);
+
+        button.addEventListener("click", () => {
+            const divs = document.querySelectorAll("body > div");
+            if (divs) {
+                divs[divs.length - 1].remove();
+            }
+        });
+
+
+
 
