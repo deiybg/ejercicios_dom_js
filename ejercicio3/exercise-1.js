@@ -32,7 +32,7 @@ for (const car of cars) {
 }
 dataFunction.appendChild(ulCars);
 
-/////////////////////////////////ejercicio 3.4///////////////////////////////////
+/////////////////////////////////ejercicio 3.4 y ejercicio 3.6///////////////////////////////////
 
 const cities = [
   { title: "Random title", imgUrl: "https://picsum.photos/300/200?random=1" },
